@@ -176,3 +176,64 @@ i {
     color: var(--DarkGray);
     font-size: .8rem;
 }
+
+
+@media screen and (max-width: 767px) {
+    body{
+        transition: .5s;
+    }
+    .header .searchBar {
+        width: 90%;
+    }
+
+    .theme {
+        right: 2rem;
+    }
+
+    .flex {
+        row-gap: .2rem;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .header .searchInfo {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        row-gap: 1rem;
+        top:0;
+        margin-bottom:2rem;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    body{
+        transition: .5s;
+    }
+    .header .searchBar {
+        width: 90%;
+    }
+
+    .theme {
+        right: 2rem;
+    }
+
+    .flex {
+        row-gap: .2rem;
+    }
+
+    .header {
+        height: 100%;
+    }
+
+    .header .searchInfo {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        row-gap: 1rem;
+        top:0;
+        margin-bottom:2rem;
+    }
+}
