@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+:root {
+    /*  ### Primary */
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+    --font: 'Rubik', sans-serif;
+    --f400: 400;
+    --f500: 500;
+    --f700: 700;
+    --fontColor: hsl(0, 0%, 17%);
+    --iconColor: hsl(0, 0%, 17%);
+}
+
+body.dark-theme {
+    --VeryDarkGray: hsl(0, 0%, 17%);
+    --DarkGray: hsl(0, 0%, 59%);
+    --headerColor: hsl(0, 0%, 17%);
+    --fontColor: hsl(0, 0%, 100%);
+    --iconColor: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    font-family: var(--font);
+    font-weight: var(--f400);
+    color: var(--DarkGray);
+    font-size: 1.4rem;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--fontColor);
+    font-size: 1.75rem;
+}
+
+#map {
+    height: calc(100vh - 300px);
+    z-index: 0;
+}
+
+.theme {
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+}
+
+.change-theme {
+    cursor: pointer;
+    color: var(--iconColor);
+    font-size: 1.5rem;
+    transition: 1s;
+}
+
+.change-theme:hover {
+    color: var(--DarkGray);
+}
+
+.header {
+    background: var(--headerColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    row-gap: 2.5rem;
+    transition: .8s;
+}
+
+.header .title {
+    font-weight: var(--f700);
+    margin-top: 5rem;
+}
+
+.header .searchBar {
+    display: inline-block;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.header .search {
+    border-radius: .5rem;
+    padding: .5rem .5rem;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.header .searchInfo {
+    display: flex;
+    column-gap: 5rem;
+    background: #fff;
+    padding: 1.5rem 1.5rem;
+    border-radius: 1rem;
+    position: relative;
+    top: 30px;
+    z-index: 1;
+    box-shadow: 0px 0px 5px 0px #e7e7e7;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: .8rem;
+}
+
+.flex label {
+    color: var(--DarkGray);
+    font-size: .8rem;
+    font-weight: var(--f500);
+
+}
+
+.flex span {
+    color: var(--VeryDarkGray);
+    font-size: 1.2rem;
+    font-weight: var(--f500);
+
+}
+
+.fieldInput {
+    display: block;
+    position: relative;
+    box-shadow: 0 4px 20px 0 rgb(0 0 0 / 12%);
+    overflow: hidden;
+    border: none;
+    border-radius: .5rem;
+}
+
+.fieldInput .form-input {
+    width: 200px;
+    background: none;
+    border: none;
+    padding: 12px 20px;
+    font-size: 9px;
+    color: #6a7c92;
+}
+
+.fieldInput .form-input:focus {
+    outline: none;
+}
+
+.fieldInput .form-submit {
+    font-size: 12px;
+    color: #6a7c92;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 0rem .5rem .5rem 0rem;
+    border: none;
+    background: hsl(0deg 60% 55%);
+    box-shadow: 5px -2px 81px 1px rgba(0, 0, 0, 0.09);
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    column-gap: .2rem;
+    margin: 0.5rem 0.5rem;
+}
+
+footer .owner,
+i {
+    color: var(--DarkGray);
+    font-size: .8rem;
+}

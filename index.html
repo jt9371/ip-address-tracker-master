@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.1/dist/leaflet.css"
+      integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.1/dist/leaflet.js"
+      integrity="sha256-NDI0K41gVbWqfkkaHj15IzU7PtMoelkzyKp8TOaFQ3s="
+      crossorigin=""
+    ></script>
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <div class="header">
+          <nav class="theme">
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+          </nav>
+          <h3 class="title">IP Address Tracker</h3>
+          <div class="searchBar">
+            <fieldset class="fieldInput">
+              <input type="text" name="" id="searchIp" class="search" />
+              <button type="submit" class="form-submit" id="formButton">
+                <img src="images/icon-arrow.svg" alt="" />
+              </button>
+            </fieldset>
+          </div>
+          <div class="searchInfo">
+            <div class="ipaddress flex">
+              <label>IP Address</label>
+              <span id="ipaddress">102.405.234</span>
+            </div>
+            <div class="location flex">
+              <label>Location</label>
+              <span id="city">Chicago</span>
+            </div>
+            <div class="timezone flex">
+              <label>Timezone</label>
+              <span id="timezone">UTC -5:00</span>
+            </div>
+            <div class="isp flex">
+              <label>ISP</label>
+              <span id="isp">SpaceX</span>
+            </div>
+            <div class="vpn flex">
+              <label>VPN</label>
+              <span id="vpn">Test</span>
+            </div>
+          </div>
+        </div>
+        <div id="map" class="mapping"></div>
+      </div>
+      <footer>
+        <span class="owner">Developed by Juan</span>
+        <i class="ri-ghost-fill"></i>
+      </footer>
+    </main>
+    <script src="assets/index.js"></script>
+  </body>
+</html>
